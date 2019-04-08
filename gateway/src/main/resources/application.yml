@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 8762
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirarionDurationInSeconds: 2
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000000

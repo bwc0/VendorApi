@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		 <groupId>com.vendor</groupId>
+		<artifactId>vendor</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.vendor-service</groupId>
+	<artifactId>vendor-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>vendor-service</name>
+	<description>Vendor Service</description>
+
+	<dependencies>
+
+	</dependencies>
+</project>

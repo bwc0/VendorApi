@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: vendor-service
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    platform: h2
+  jpa:
+    show-sql: false
+
+server:
+  port: 8081
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 2
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+    fetchRegistry: true
