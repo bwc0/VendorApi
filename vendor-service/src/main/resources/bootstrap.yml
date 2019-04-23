@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: vendor-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+    vault:
+      host: localhost
+      port: 8200
+      scheme: http
+      authentication: token
+      token: s.jMpVhKwXMPk5ugYCviXdWoYJ
+
+server:
+  port: 8081
+
+#hystrix:
+#  command:
+#    getAllVendors:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 6000000
+#      circuitBreaker:
+#        errorThresholdPercentage: 60
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
